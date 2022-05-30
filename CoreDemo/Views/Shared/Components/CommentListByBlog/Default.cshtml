@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Comment>
+
+
+<div class="comment-top">
+    <h4>Yorumlar</h4>
+    @if (Model.Count() <1)
+    {
+        <p>Bu bölüme hiç yorum yapılmadı ilk yorumu yapan siz olun!</p>
+    }
+    else
+    {
+        @foreach (var item in Model)
+        {
+            <div class="media">
+                <img src="~/web/images/t1.jpg" alt="" class="img-fluid" />
+                <div class="media-body">
+                    <h5 class="mt-0">@item.CommenUserName</h5>
+                    <p>
+                        @item.CommentContent
+                    </p>
+
+
+                </div>
+            </div>
+        }
+
+    }
+
+</div>

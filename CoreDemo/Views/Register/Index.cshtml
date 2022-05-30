@@ -1,0 +1,55 @@
+﻿@model Writer
+@{
+
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<section class="main-content-w3layouts-agileits">
+    <div class="container">
+        <h3 class="tittle">Yazar Kayıt Sayfası </h3>
+        <div class="inner-sec">
+            <div class="login p-5 bg-light mx-auto mw-100">
+                <form asp-action="Index" method="post" >
+                    <div asp-validation-summary="All" class="text-danger">
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label >Adınız Soyadınız</label>
+                                <input type="text" class="form-control" asp-for="WriterName"  >
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label >Mail Adresi</label>
+                                <input type="email" class="form-control" asp-for="WriterMail"  >
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label >Şifre</label>
+                                <input type="password" class="form-control" asp-for="WriterPassword" >
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label >Resim Yükle</label>
+                                <input type="text" class="form-control" asp-for="WriterImage" >
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <button type="submit" class="btn btn-primary submit mb-4">Kayıt Ol</button>
+                    <p>
+                        <a href="#" id="btn1">Tüm şartları okudum, kabul ediyorum.</a>
+                    </p>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <script>
+        $("#btn1").click(function () {
+
+            swal("Site Kabul Şartları","Sitemizde verdiğiniz mail adresi üzerinden  bilgi ve haber e-postaları spam ölçüsüne varmadan gönderilmeye devam edilcektedir");
+        });
+    </script>
+</section>

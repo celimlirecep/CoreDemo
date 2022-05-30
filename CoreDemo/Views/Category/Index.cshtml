@@ -1,0 +1,11 @@
+﻿@model List<EntityLayer.Concrete.Category>
+@{
+    ViewData["Title"] = "Test";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@foreach (var item in Model)
+{
+    <label>@item.CategoryName</label><br/>
+}
