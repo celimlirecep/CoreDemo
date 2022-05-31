@@ -26,22 +26,22 @@ namespace BusinessLayer.Concreate
 
         public void Delete(Comment comment)
         {
-            throw new NotImplementedException();
+            _commentDAL.Delete(comment);
         }
 
         public Comment GetByFunc(Expression<Func<Comment, bool>> filter)
         {
-            throw new NotImplementedException();
+           return _commentDAL.GetByFunc(filter);
         }
 
         public Comment GetById(int id)
         {
-            return _commentDAL.GetById(id);
+          return  _commentDAL.GetById(id);
         }
 
         public List<Comment> GetListAll()
         {
-            throw new NotImplementedException();
+           return  _commentDAL.GetListAll();
         }
 
         public List<Comment> GetListByFunc(Expression<Func<Comment, bool>> filter)
@@ -51,7 +51,7 @@ namespace BusinessLayer.Concreate
 
         public void Update(Comment comment)
         {
-            throw new NotImplementedException();
+            _commentDAL.Update(comment);
         }
     }
 }

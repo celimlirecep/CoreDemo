@@ -11,9 +11,14 @@ namespace EntityLayer.Concrete
     {
         [Key]
         public int BlogID { get; set; }
+        [Required]
+        [StringLength(50,MinimumLength =5)]
         public string BlogTitle { get; set; }
+        [Required]
         public string BlogContent { get; set; }
+       
         public string ThumbNailImage { get; set; }
+        [Required]
         public string Image { get; set; }
         public DateTime BlogCreateDate { get; set; }
         public bool BlogStatus { get; set; }

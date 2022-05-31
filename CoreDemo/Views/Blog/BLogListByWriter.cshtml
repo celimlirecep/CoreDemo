@@ -1,0 +1,38 @@
+﻿@model  List<Blog>
+@{
+
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+
+}
+<h1>Yazarın Blogları</h1>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>#    </th>
+            <th>Blog Başlığı    </th>
+            <th>Oluşturulma Tarihi   </th>
+            <th>kategori   </th>
+            <th>Durum   </th>
+            <th >İşlem   </th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.BlogID    </td>
+            <td>@item.BlogTitle    </td>
+            <td>@(((DateTime)item.BlogCreateDate).ToString("dd MMM yyyy"))    </td>
+            <td>@item.CategoryID    </td>
+            <td>@item.BlogStatus    </td>
+            <td>
+            <a href="#" class="btn btn-danger">Sil</a>
+            <a href="#" class="btn btn-primary">Düzenle</a> 
+            </td>
+        </tr>
+        }
+
+    </tbody>
+    
+</table>

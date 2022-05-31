@@ -20,17 +20,17 @@ namespace BusinessLayer.Concreate
             _categoryDal = categoryDal;
         }
 
-        public void CategoryAdd(Category category)
+        public void Add(Category category)
         {
             _categoryDal.Insert(category);
         }
 
-        public void CategoryDelete(Category category)
+        public void Delete(Category category)
         {
             _categoryDal.Delete(category);
         }
 
-        public void CategoryUpdate(Category category)
+        public void Update(Category category)
         {
             _categoryDal.Update(category);
         }
