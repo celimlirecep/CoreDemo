@@ -22,7 +22,7 @@ namespace BusinessLayer.Concreate
       
         public List<Blog> GetBlogListByWriter(int id)
         {
-            return _blogDal.GetListByFunc(i => i.BlogID == id);
+            return _blogDal.GetListByFunc(i => i.WriterId == id);
         }
 
         public List<Blog> GetBlogListWithCategory()
@@ -72,5 +72,9 @@ namespace BusinessLayer.Concreate
             return _blogDal.GetListByFunc(filter);
         }
 
+        public List<Blog> GetListWithCategoryByWriter(int id)
+        {
+            return _blogDal.GetListWithCategoryByWriter(id);
+        }
     }
 }

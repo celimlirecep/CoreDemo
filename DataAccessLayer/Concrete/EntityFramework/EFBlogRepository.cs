@@ -22,5 +22,17 @@ namespace DataAccessLayer.Concrete.EntityFramework
             }
           
         }
+
+        //status is true ise döndürülür
+        public List<Blog> GetListWithCategoryByWriter(int id)
+        {
+            using (var context=new Context())
+            {
+                return context.Blogs
+                    .Where(i => i.WriterId == id && i.BlogStatus==true)
+                    .Include(i => i.Category)
+                    .ToList();
+            }
+        }
     }
 }

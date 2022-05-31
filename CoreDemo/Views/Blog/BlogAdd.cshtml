@@ -14,12 +14,13 @@
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1 mb-2">Blog Küçük Görsel</label>
-                <input type="text" class="form-control" asp-for="ThumbNailImage" placeholder="" required=""> </input>
+                <input type="text" class="form-control" asp-for="Image" placeholder="" required=""> </input>
             </div>
             <div class="form-group">
-                <label for="exampleInputPassword1 mb-2">Kategori Id</label>
-                <input type="number" class="form-control" asp-for="CategoryID" placeholder="" required=""> </input>
+                <label for="exampleInputPassword1 mb-2">Kategori </label>
+                <select type="number" class="form-control" asp-for="CategoryID" asp-items="@ViewBag.Categories" placeholder="" required=""> </select>
             </div>
+     
 
             <div class="form-group">
                 <label for="exampleInputPassword1 mb-2">Blog İçeriği</label>
@@ -28,7 +29,7 @@
 
 
             <button type="submit" class="btn btn-primary submit mb-4">kaydet</button>
-            
+
         </form>
 
     </div>
