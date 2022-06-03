@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using BusinessLayer.Abstract;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,12 @@ namespace CoreDemo.Controllers
     [AllowAnonymous]
     public class WriterController : Controller
     {
+        private IWriterService _writerService;
+
+        public WriterController(IWriterService writerService)
+        {
+            _writerService = writerService;
+        }
 
         public IActionResult Index()
         {
@@ -28,6 +35,11 @@ namespace CoreDemo.Controllers
         {
             return PartialView();
         }
+        public IActionResult WriterEditProfile(int id=2)
+        {
+            return View(_writerService.GetById(id));
+        }
+
 
 
 
