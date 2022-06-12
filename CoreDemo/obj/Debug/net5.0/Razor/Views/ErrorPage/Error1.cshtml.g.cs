@@ -33,8 +33,15 @@ using EntityLayer.Concrete;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\recep\OneDrive\Masaüstü\CoreDemo\CoreDemo\Views\_ViewImports.cshtml"
+using CoreDemo.Controllers;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c0f3c2eb1ce13e0ea84158faffc37c1a647ce6dd", @"/Views/ErrorPage/Error1.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1ca0fc599d5f51e519f75ff6712b592ffabce4a7", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a6c16875eef96ac9081b6d6f4e9b51082d3df8c9", @"/Views/_ViewImports.cshtml")]
     public class Views_ErrorPage_Error1 : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("rel", new global::Microsoft.AspNetCore.Html.HtmlString("stylesheet"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -74,7 +81,7 @@ using EntityLayer.Concrete;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\r\n\r\n\r\n\r\n<!DOCTYPE html>\r\n<html lang=\"zxx\">\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c0f3c2eb1ce13e0ea84158faffc37c1a647ce6dd6680", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c0f3c2eb1ce13e0ea84158faffc37c1a647ce6dd6866", async() => {
                 WriteLiteral(@"
     <title>Bicycle Error Page Responsive Widget Template :: W3layouts</title>
     <!-- Meta tag Keywords -->
@@ -94,7 +101,7 @@ using EntityLayer.Concrete;
     <!-- //Meta tag Keywords -->
     <!--/Style-CSS -->
     ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c0f3c2eb1ce13e0ea84158faffc37c1a647ce6dd7686", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c0f3c2eb1ce13e0ea84158faffc37c1a647ce6dd7872", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -111,7 +118,7 @@ using EntityLayer.Concrete;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n    <!--//Style-CSS -->\r\n    <!-- font-awesome-icons -->\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c0f3c2eb1ce13e0ea84158faffc37c1a647ce6dd9100", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c0f3c2eb1ce13e0ea84158faffc37c1a647ce6dd9286", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -138,7 +145,7 @@ using EntityLayer.Concrete;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c0f3c2eb1ce13e0ea84158faffc37c1a647ce6dd11024", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c0f3c2eb1ce13e0ea84158faffc37c1a647ce6dd11210", async() => {
                 WriteLiteral(@"
     <section class=""w3l-error-61-404"">
         <!-- /error-61-section -->
@@ -150,7 +157,7 @@ using EntityLayer.Concrete;
 
                         <p>Oops! Sayfa Bulunamadı!</p>
                         ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c0f3c2eb1ce13e0ea84158faffc37c1a647ce6dd11656", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c0f3c2eb1ce13e0ea84158faffc37c1a647ce6dd11842", async() => {
                     WriteLiteral("\r\n                            <input type=\"search\" placeholder=\"Ara...\" required=\"required\">\r\n                            <button type=\"submit\"><span class=\"fa fa-search\" aria-hidden=\"true\"></span></button>\r\n                        ");
                 }
                 );

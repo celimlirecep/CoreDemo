@@ -340,3 +340,11 @@ C:\Users\recep\OneDrive\Masaüstü\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\View
 C:\Users\recep\OneDrive\Masaüstü\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Shared\Components\CategoryListDashBoard\Default.cshtml.g.cs
 C:\Users\recep\OneDrive\Masaüstü\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterAboutOnDashboard\Default.cshtml.g.cs
 C:\Users\recep\OneDrive\Masaüstü\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Writer\WriterEditProfile.cshtml.g.cs
+C:\Users\recep\OneDrive\Masaüstü\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\EmployeeTest\Index.cshtml.g.cs
+C:\Users\recep\OneDrive\Masaüstü\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\EmployeeTest\AddEmployee.cshtml.g.cs
+C:\Users\recep\OneDrive\Masaüstü\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\EmployeeTest\EditEmployee.cshtml.g.cs
+C:\Users\recep\OneDrive\Masaüstü\CoreDemo\CoreDemo\bin\Debug\net5.0\ClosedXML.dll
+C:\Users\recep\OneDrive\Masaüstü\CoreDemo\CoreDemo\bin\Debug\net5.0\DocumentFormat.OpenXml.dll
+C:\Users\recep\OneDrive\Masaüstü\CoreDemo\CoreDemo\bin\Debug\net5.0\ExcelNumberFormat.dll
+C:\Users\recep\OneDrive\Masaüstü\CoreDemo\CoreDemo\bin\Debug\net5.0\System.IO.Packaging.dll
+C:\Users\recep\OneDrive\Masaüstü\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Export\WriterListExcel.cshtml.g.cs

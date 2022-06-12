@@ -47,27 +47,27 @@ namespace CoreDemo
             services.AddScoped<IContactService, ContactManager>();
 
             //Login iþlemi için authorization devam(2)
-            services.AddSession(); //yeni düzenleme ile gerek kalmadý
+            services.AddSession();
 
             //Authentication iþlemleri 
             //Proje seviyesinde Authorize iþlemi gerçekleþtirmiþ olduk
-            services.AddMvc(config => {
+            //services.AddMvc(config => {
 
-                var policy = new AuthorizationPolicyBuilder()
-                  .RequireAuthenticatedUser()
-                  .Build();
-                config.Filters.Add(new AuthorizeFilter(policy));
-            
-            });
+            //    var policy = new AuthorizationPolicyBuilder()
+            //      .RequireAuthenticatedUser()
+            //      .Build();
+            //    config.Filters.Add(new AuthorizeFilter(policy));
 
-            //Authentice olunmayan yerde ki durumlarý ayarlýyoruz
-            services.AddMvc();
-            services.AddAuthentication(
-                CookieAuthenticationDefaults.AuthenticationScheme)
-                .AddCookie(i =>
-                {
-                    i.LoginPath = "/Login/Index";// authentice deðilse buraya yönlendirir
-                });
+            //});
+
+            ////Authentice olunmayan yerde ki durumlarý ayarlýyoruz
+            //services.AddMvc();
+            //services.AddAuthentication(
+            //    CookieAuthenticationDefaults.AuthenticationScheme)
+            //    .AddCookie(i =>
+            //    {
+            //        i.LoginPath = "/Login/Index";// authentice deðilse buraya yönlendirir
+            //    });
 
         }
 
@@ -92,7 +92,7 @@ namespace CoreDemo
 
 
             //login iþlemi için gerekli
-            app.UseAuthentication();
+            //app.UseAuthentication();
             app.UseSession();
 
             app.UseRouting();
@@ -101,6 +101,8 @@ namespace CoreDemo
 
             app.UseEndpoints(endpoints =>
             {
+
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
